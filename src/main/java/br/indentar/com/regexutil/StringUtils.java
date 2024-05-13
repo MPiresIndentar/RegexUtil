@@ -16,7 +16,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
-
 /**
  *
  * @author marlucio
@@ -339,5 +338,17 @@ public class StringUtils extends org.apache.commons.lang3.StringUtils {
      */
     public static String eliminateAccent(final String stringToRemoveAccent) {
         return Strings.eliminateAccent(stringToRemoveAccent);
+    }
+
+    public static String findFirstText(String stringSearch, String pattern) {
+        Pattern regex = Pattern.compile(pattern);
+        Matcher matcher = regex.matcher(stringSearch);
+        if (matcher.find()) {
+            String found = matcher.group(1);
+            return found;
+        } else {
+            System.out.println("Not found");
+        }
+        return null;
     }
 }
