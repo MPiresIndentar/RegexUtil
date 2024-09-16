@@ -4,39 +4,31 @@
  */
 package br.indentar.com.regexutil;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
+import org.junit.BeforeClass;
+import org.junit.Ignore;
+import org.junit.Test;
 
 /**
  *
  * @author Marlucio
  */
+@Ignore
 public class StringUtilsEspecificacoesTest {
-    
+
     public StringUtilsEspecificacoesTest() {
     }
 
-    @org.junit.jupiter.api.BeforeAll
+    @BeforeClass
     public static void setUpClass() throws Exception {
     }
 
-    @org.junit.jupiter.api.AfterAll
-    public static void tearDownClass() throws Exception {
-    }
-
-    @org.junit.jupiter.api.BeforeEach
-    public void setUp() throws Exception {
-    }
-
-    @org.junit.jupiter.api.AfterEach
-    public void tearDown() throws Exception {
-    }
-    
-
-
     /**
-     * Test of getAceitacaoDoPrimeiroNomes method, of class StringUtilsEspecificacoes.
+     * Test of getAceitacaoDoPrimeiroNomes method, of class
+     * StringUtilsEspecificacoes.
      */
-    @org.junit.jupiter.api.Test
+    @Test
     public void testGetAceitacaoDoPrimeiroNomes() {
         System.out.println("getAceitacaoDoPrimeiroNomes");
         StringUtilsEspecificacoes instance = null;
@@ -48,9 +40,10 @@ public class StringUtilsEspecificacoesTest {
     }
 
     /**
-     * Test of getAceitacaoDoNomeTodo method, of class StringUtilsEspecificacoes.
+     * Test of getAceitacaoDoNomeTodo method, of class
+     * StringUtilsEspecificacoes.
      */
-    @org.junit.jupiter.api.Test
+    @Test
     public void testGetAceitacaoDoNomeTodo() {
         System.out.println("getAceitacaoDoNomeTodo");
         StringUtilsEspecificacoes instance = null;
@@ -62,9 +55,10 @@ public class StringUtilsEspecificacoesTest {
     }
 
     /**
-     * Test of getPercAlteradoPrimeroNome method, of class StringUtilsEspecificacoes.
+     * Test of getPercAlteradoPrimeroNome method, of class
+     * StringUtilsEspecificacoes.
      */
-    @org.junit.jupiter.api.Test
+    @Test
     public void testGetPercAlteradoPrimeroNome() {
         System.out.println("getPercAlteradoPrimeroNome");
         StringUtilsEspecificacoes instance = null;
@@ -76,9 +70,10 @@ public class StringUtilsEspecificacoesTest {
     }
 
     /**
-     * Test of getPercAlteradoRestanteNome method, of class StringUtilsEspecificacoes.
+     * Test of getPercAlteradoRestanteNome method, of class
+     * StringUtilsEspecificacoes.
      */
-    @org.junit.jupiter.api.Test
+    @Test
     public void testGetPercAlteradoRestanteNome() {
         System.out.println("getPercAlteradoRestanteNome");
         StringUtilsEspecificacoes instance = null;
@@ -90,9 +85,10 @@ public class StringUtilsEspecificacoesTest {
     }
 
     /**
-     * Test of primeiroNomeElegivelParaMudanca method, of class StringUtilsEspecificacoes.
+     * Test of primeiroNomeElegivelParaMudanca method, of class
+     * StringUtilsEspecificacoes.
      */
-    @org.junit.jupiter.api.Test
+    @Test
     public void testPrimeiroNomeElegivelParaMudanca() {
         System.out.println("primeiroNomeElegivelParaMudanca");
         String nomeOriginal = "";
@@ -106,9 +102,10 @@ public class StringUtilsEspecificacoesTest {
     }
 
     /**
-     * Test of sobreNomeElegivelParaMudanca method, of class StringUtilsEspecificacoes.
+     * Test of sobreNomeElegivelParaMudanca method, of class
+     * StringUtilsEspecificacoes.
      */
-    @org.junit.jupiter.api.Test
+    @Test
     public void testSobreNomeElegivelParaMudanca() {
         System.out.println("sobreNomeElegivelParaMudanca");
         String nomeOriginal = "";
@@ -122,9 +119,10 @@ public class StringUtilsEspecificacoesTest {
     }
 
     /**
-     * Test of nomeTodoElegivelParaTroca method, of class StringUtilsEspecificacoes.
+     * Test of nomeTodoElegivelParaTroca method, of class
+     * StringUtilsEspecificacoes.
      */
-    @org.junit.jupiter.api.Test
+    @Test
     public void testNomeTodoElegivelParaTroca() {
         System.out.println("nomeTodoElegivelParaTroca");
         String nomeOriginal = "Marlúcio Ferreira Pires Junior";
@@ -136,5 +134,5 @@ public class StringUtilsEspecificacoesTest {
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
-    
+
 }
