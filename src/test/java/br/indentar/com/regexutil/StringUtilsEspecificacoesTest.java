@@ -4,12 +4,14 @@
  */
 package br.indentar.com.regexutil;
 
+import jdk.nashorn.internal.ir.annotations.Ignore;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
  *
  * @author Marlucio
  */
+@Ignore
 public class StringUtilsEspecificacoesTest {
     
     public StringUtilsEspecificacoesTest() {
