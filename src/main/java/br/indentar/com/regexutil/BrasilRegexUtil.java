@@ -20,4 +20,34 @@ public class BrasilRegexUtil {
         Matcher matcher = pattern.matcher(placa);
         return matcher.matches();
     }
+
+    public static String toWhatsNumberBr(String number, String defaultDDD, boolean remover9) {
+        number = number.replaceAll("[^0-9]", "");
+        int length = number.length();
+        switch (length) {
+            case 8:
+                number = "55".concat(defaultDDD).concat(number);
+                break;
+            case 9:
+                char primeiroNumero = number.charAt(0);
+                if (primeiroNumero == '9' && remover9) {
+                    number = "55".concat(defaultDDD).concat(number.substring(1));
+                } else {
+                    number = "55".concat(defaultDDD).concat(number);
+                }
+                break;
+            case 10:
+                number = "55".concat(number);
+                break;
+            case 11:
+                char primeiroNumeroEm11 = number.charAt(0);
+                if (primeiroNumeroEm11 == '9' && remover9) {
+                    number = "55".concat(number.substring(1));
+                } else {
+                    number = "55".concat(number);
+                }
+                break;
+        }
+        return number;
+    }
 }

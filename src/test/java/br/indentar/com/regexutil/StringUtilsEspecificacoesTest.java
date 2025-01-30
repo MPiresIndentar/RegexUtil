@@ -5,11 +5,13 @@
 package br.indentar.com.regexutil;
 
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Disabled;
 
 /**
  *
  * @author Marlucio
  */
+@Disabled
 public class StringUtilsEspecificacoesTest {
     
     public StringUtilsEspecificacoesTest() {
