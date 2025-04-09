@@ -305,6 +305,9 @@ public class StringUtils extends org.apache.commons.lang3.StringUtils {
         return containsNumber.replaceAll("[^\\d]", separador).trim();
     }
 
+    public static String limitaTamanho(String str,int limite){
+        return left(str, limite);
+    }
     public static String subStringMaxLength(String str, int maxLength) {
         if (str != null && str.length() > 0) {
             int length = str.length();
