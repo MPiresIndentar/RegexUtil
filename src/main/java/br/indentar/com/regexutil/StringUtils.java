@@ -284,6 +284,13 @@ public class StringUtils extends org.apache.commons.lang3.StringUtils {
         return stringMoedaRealBr.replaceAll("[R$]", "");
     }
 
+    public static String apenasLetrasENumeros(String valor) {
+        if (valor == null) {
+            return "";
+        }
+        return valor.replaceAll("[^a-zA-Z0-9]", "");
+    }
+
     /**
      * Verifica se tem números na string
      *
@@ -305,9 +312,10 @@ public class StringUtils extends org.apache.commons.lang3.StringUtils {
         return containsNumber.replaceAll("[^\\d]", separador).trim();
     }
 
-    public static String limitaTamanho(String str,int limite){
+    public static String limitaTamanho(String str, int limite) {
         return left(str, limite);
     }
+
     public static String subStringMaxLength(String str, int maxLength) {
         if (str != null && str.length() > 0) {
             int length = str.length();
